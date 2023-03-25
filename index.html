@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webpage</title>
+    </head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        hr {
+            width:20%;
+        }
+        div {
+            border:2px solid black;
+            width:25%;
+            padding: 4px;
+            margin:auto;
+        }
+    </style>
+    <body>
+        <h1>Welcome</h1>
+        <hr>
+        <h2>JAVASCRIPT</h2>
+        <hr>
+        <div>
+        <p id="text">The JavaScript can change the HTML</p>
+        <button type="button" onclick="myfunction()">Click here</button><br>
+        <p>To print the number click below</p>
+        <button type="button" onclick="document.write(8+6)">Number</button><br>
+        <p>To get a Alert message click below</p>
+        <button type="button" onclick="alert(8+6)">Alert</button>
+        <p>To get print of text</p>
+        <button type="button" onclick="window.print(8+9)">Print</button>
+        </div>
+        <script>
+         function myfunction () {
+            document.getElementById ("text").innerHTML="JAVASCRIPT";
+            document.getElementById ("text").style.fontFamily="courier";
+            document.getElementById ("text").style.color="blue";
+         }
+        </script>
+    </body>
+</html>
